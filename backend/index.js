@@ -10,11 +10,7 @@ app.use(
     origin: "*",
   })
 );
-
-app.use("/", (req, res) => {
-  res.send("Server is running");
-});
-
+console.log("test");
 app.get("/generateSVG", handleGenerateSVG);
 
 const PORT = 8000;
