@@ -10,7 +10,7 @@ app.use(
     origin: "*",
   })
 );
-console.log("test");
+
 app.get("/generateSVG", handleGenerateSVG);
 
 const PORT = 8000;
