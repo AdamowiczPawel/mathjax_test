@@ -11,6 +11,10 @@ app.use(
   })
 );
 
+app.use("/", (req, res) => {
+  res.send("Server is running");
+});
+
 app.get("/generateSVG", handleGenerateSVG);
 
 const PORT = 8000;
