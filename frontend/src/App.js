@@ -7,7 +7,7 @@ const fetchSVG = async () => {
   console.log("apiURL:", configFetch.apiUrl);
   try {
     const response = await fetch(`${configFetch.apiUrl}/generateSVG`, {
-      method: "GET",
+      method: "POST",
       headers: {
         "Content-Type": "image/svg+xml",
       },
