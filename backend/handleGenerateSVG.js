@@ -16,6 +16,7 @@ const mathMLExpression = `<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&
 export const handleGenerateSVG = async (req, res) => {
   // Convert MathML to SVG using mathjax-node
   const result = await new Promise((resolve, reject) => {
+    console.log("handleGenerateSVG.js");
     mj.typeset(
       {
         math: mathMLExpression,

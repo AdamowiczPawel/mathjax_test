@@ -4,6 +4,7 @@ import configFetch from "./configFetch";
 import React, { useState } from "react";
 
 const fetchSVG = async () => {
+  console.log("apiURL:", configFetch.apiUrl);
   try {
     const response = await fetch(`${configFetch.apiUrl}/generateSVG`, {
       method: "GET",
